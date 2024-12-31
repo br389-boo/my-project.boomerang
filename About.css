@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600;700&display=swap');
+
+:root {
+    --russianviolet:#250b47;
+    --murrey:#920653;
+    --folly:#ff005e;
+    --blur:#ffd1d14d;
+    --pennrred:#9d0208;
+    --engineeringorange:#d00000;
+    --sinopia:#dc2f02;
+    --persimmon:#e85d04;
+    --princetonorange:#f48c06;
+    --orange:#faa307;
+    --selectiveyellow:#ffba08;
+}
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e3fafffc;
+}
+
+nav {
+    height: 60px;
+    /*border: 1px solid red;*/
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(40deg, #53ff98, #5aadff, #5f41f5);
+}
+
+nav ul {
+    margin-right: 100px;
+    display: flex;
+    list-style: none;
+    width: 300px;
+    /*border: 1px solid red;*/
+    justify-content: space-between;
+}
+
+nav li {
+
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:hover {
+    background-color: #ffd1d14d;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    width: 180px;
+    margin-left: 100px;
+    background: linear-gradient(#0b34ff, #02dcce, #04b7e8);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 0px #0727fa;
+    font-size: 26px;
+}
+
+.about-text {
+    font-family: "Mali", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;  /* เพิ่มความโปร่งของบรรทัด */
+    text-align: justify;  /* จัดข้อความชิดขอบทั้งสองด้าน */
+    color: #4b3832;  /* สีที่อ่านง่ายและสบายตา */
+    margin: 40px 5% 40px;  /* เพิ่มระยะห่างจากขอบ */
+    padding: 0.1px;
+    background-color: #fdffff;  /* พื้นหลังสีนวลเพื่อเน้นข้อความ */
+    border-radius: 15px;  /* มุมโค้งมนเพื่อความนุ่มนวล */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* เพิ่มเงาอ่อนๆ */
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #006abbad;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);  /* เพิ่มเงาให้หัวข้อ */
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+
+.about {
+	padding: 40px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+    background: linear-gradient(#0a37ff, #5c7aff, #fbb1bd);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*.about {
+	padding: 80px 0 40px 0;
+	text-align: center;
+    background-color: #fff9f3;  /* พื้นหลังที่อ่านง่าย */
+
+*/
+.about h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+    background: linear-gradient(90deg,#0a37ff, #5c7aff, #fbb1bd);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);  /* เพิ่มเงาให้หัวข้อ */
+}
+.cartoon-btn {
+    margin-top: 30px;
+    padding: 10px 0px 10px 685px;
+}
+
+.cartoon-btn a {
+    display: inline-block;
+}
+.cartoon-learnmore {
+    background: linear-gradient(40deg, #0059ff, #4ec7ff);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.cartoon-learnmore:hover {
+    border-radius: 25px;
+    transition: 0.4s;
+    transform: translateY(-3px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/*.content {
+    margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+img {
+    width: 100px;
+}
+
+.content h2 {
+    font-size: 1.3rem;
+	margin: 0 5rem;
+	text-align: justify;
+}*/
+
+.content {
+    margin: 2rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+    max-width: 1000px;  /* กำหนดความกว้าง */
+    line-height: 1;  /* เพิ่มระยะห่างบรรทัด */
+}
+
+.content h2 {
+    font-size: 1.5rem;
+	margin: 0 4rem;
+	text-align: justify;
+    color: #5d4037;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+    background: linear-gradient(#0a37ff, #5c7aff, #fbb1bd);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 0 24px 26px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 18px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 18rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+footer {
+    height: 250px;
+    margin-top: 10%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(40deg,#53ff98, #5aadff, #5f41f5);
+}
+
+.container-footer {
+    width: 100%;
+    padding: 5px 30px 30px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 30px;
+    color: #0263ff;
+}
+
+.social-icon a:hover {
+    background-color: #ffd1d14d;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.5s;
+}
+
+.nav-footer {
+    margin: 20px 0;
+}
+
+.nav-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-footer li:hover {
+    background-color: #ffd1d14d;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.5s;
+}
+
+.nav-footer ul li a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-btn {
+    text-align: center;
+}
+
+.footer-btn p {
+    color: white;
+    padding: 5px;
+}
+
+.designer {
+    color: #0263ff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+}
